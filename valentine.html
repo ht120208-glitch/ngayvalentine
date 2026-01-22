@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Liên Hệ</title>
+
+    <!-- Ngăn lưu cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <style>
+        .navbar {
+            border: solid 2px black;
+            background-color: lightpink;  
+            position: fixed;
+            top: 0;
+            width: 100%; 
+            margin: 0;
+            height: auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Kiểu cho từng mục menu */
+        .menu li {
+            margin: 0 20px; 
+        }
+        .menu a {
+            color: white;
+            font-size: 18px; 
+            padding: 10px 15px;
+            transition: background-color 0.3s; 
+              
+        }
+        .menu a:hover {
+            background-color: #555; 
+            border-radius: 7px;
+            zoom: 1.5;   
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e85dcb, #4364f7, lightpink);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contact-box {
+            width: 330px;
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            padding: 25px 25px 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+            animation: fadeDown 0.4s ease;
+        }
+
+        @keyframes fadeDown {
+            from { transform: translateY(-15px); opacity: 0; }
+            to   { transform: translateY(0); opacity: 1; }
+        }
+
+        h3 {
+            margin: 0 0 15px 0;
+            text-align: center;
+            color: #333;
+            font-size: 22px;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            transition: 0.2s;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #4375ff;
+            box-shadow: 0 0 6px #4375ff55;
+            outline: none;
+        }
+
+        button {
+            width: 102%;
+            padding: 12px;
+            margin-top: 12px;
+            background: #4375ff;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #2f5ee8;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+        <ul class="menu">
+            <li><a href="abcxyz.html">Giới Thiệu</a></li>
+            <li><a href="bailam1.html">Hoạt Động</a></li>
+            <li><a href="valentine.html">Liên Hệ</a></li>
+        </ul>
+    </div>
+<div class="contact-box">
+    <form action="thankyou.html" method="get" autocomplete="off">
+        <h3>Liên Hệ</h3>
+
+        <input type="text" placeholder="Họ và tên" required autocomplete="off">
+        <input type="tel" placeholder="Số điện thoại" required autocomplete="off">
+        <input type="email" placeholder="Gmail" required autocomplete="off">
+
+        <button type="submit">Góp ý</button>
+    </form>
+</div>
+
+</body>
+</html>

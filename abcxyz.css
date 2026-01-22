@@ -1,0 +1,82 @@
+.im{
+ display: block;
+            margin-left: auto;
+            margin-right: auto;
+}
+.header-image{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Kiểu cho thanh menu */
+.navbar {
+    border: solid 2px black;
+    background-color: lightpink;  
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    margin: 0;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kiểu cho từng mục menu */
+.menu li {
+    margin: 0 20px; 
+}
+.menu a {
+    color: white;
+    font-size: 18px; 
+    padding: 10px 15px;
+    transition: background-color 0.3s; 
+      
+}
+.menu a:hover {
+    background-color: #555; 
+    border-radius: 7px;
+    zoom: 1.5;   
+}
+/*kieu cho than bai*/
+.than{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 7vh;
+    background: lightpink;
+    border: dotted 10px red;
+}
+/* ảnh menu*/
+
+    
+/* liên hệ*/
+.cuoi{
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#e85dcb,lightpink);
+}
+.nhan{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 300px;
+    border: solid pink 3px;
+    margin: 0;
+    padding: 102px;
+}
+.lienhe{
+    margin: 0;
+    display: flex;
+    justify-content: top;
+    border: solid pink 3px;
+    padding: 100px;
+    padding-top: 240px; 
+    align-items: center;
+}
